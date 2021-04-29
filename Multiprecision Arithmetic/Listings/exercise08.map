@@ -1,0 +1,148 @@
+Component: ARM Compiler 5.06 update 5 (build 528) Tool: armlink [4d35e2]
+
+==============================================================================
+
+Section Cross References
+
+    exercise08.o(MyCode) refers to start.o(Start) for Startup
+    exercise08.o(MyCode) refers to exercise08.o(MyConst) for entry1
+    exercise08.o(MyCode) refers to exercise08.o(MyData) for Number1
+    exercise08.o(RESET) refers to start.o(.ARM.__at_0x1FFFE000) for __initial_sp
+    exercise08.o(RESET) refers to exercise08.o(MyCode) for Reset_Handler
+    exercise08.o(RESET) refers to start.o(Start) for Dummy_Handler
+    exercise08.o(RESET) refers to hardfault_lcd.o(HardFaultLCD) for HardFault_Handler
+
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      192  exercise08.o(RESET)
+    Exercise08.s                             0x00000000   Number         0  exercise08.o ABSOLUTE
+    HardFault_LCD.s                          0x00000000   Number         0  hardfault_lcd.o ABSOLUTE
+    start.s                                  0x00000000   Number         0  start.o ABSOLUTE
+    .ARM.__at_0xC0                           0x000000c0   Section       64  start.o(.ARM.__at_0xC0)
+    HardFaultLCD                             0x00000100   Section      408  hardfault_lcd.o(HardFaultLCD)
+    LCD_WF_Config                            0x0000018c   Data           0  hardfault_lcd.o(HardFaultLCD)
+    LCD_WF_FRONTPLANE_PINS                   0x00000208   Data           0  hardfault_lcd.o(HardFaultLCD)
+    LCD_DIGITS                               0x00000228   Data           0  hardfault_lcd.o(HardFaultLCD)
+    Start                                    0x00000298   Section      252  start.o(Start)
+    SystemInit                               0x000002a7   Thumb Code    54  start.o(Start)
+    SetClock48MHz                            0x000002dd   Thumb Code   140  start.o(Start)
+    .ARM.__at_0x400                          0x00000400   Section       16  start.o(.ARM.__at_0x400)
+    MyCode                                   0x00000410   Section      812  exercise08.o(MyCode)
+    Invalid                                  0x0000048b   Thumb Code    10  exercise08.o(MyCode)
+    AddIntMultiU                             0x00000495   Thumb Code    64  exercise08.o(MyCode)
+    GetHexIntMulti                           0x000004d5   Thumb Code   150  exercise08.o(MyCode)
+    PutHexIntMulti                           0x0000056b   Thumb Code    34  exercise08.o(MyCode)
+    NewLine                                  0x0000058d   Thumb Code    16  exercise08.o(MyCode)
+    INIT_UART0_POLLING                       0x0000059d   Thumb Code   108  exercise08.o(MyCode)
+    GetChar                                  0x00000609   Thumb Code    18  exercise08.o(MyCode)
+    PutChar                                  0x0000061b   Thumb Code    18  exercise08.o(MyCode)
+    GetStringSB                              0x0000062d   Thumb Code    70  exercise08.o(MyCode)
+    PutStringSB                              0x00000673   Thumb Code    36  exercise08.o(MyCode)
+    PutNumHex                                0x00000697   Thumb Code    58  exercise08.o(MyCode)
+    MyConst                                  0x0000073c   Section      160  exercise08.o(MyConst)
+    entry1                                   0x0000073c   Data          37  exercise08.o(MyConst)
+    entry2                                   0x00000761   Data          38  exercise08.o(MyConst)
+    Sum                                      0x00000787   Data          38  exercise08.o(MyConst)
+    Invalid1                                 0x000007ad   Data          38  exercise08.o(MyConst)
+    Overflow                                 0x000007d3   Data           9  exercise08.o(MyConst)
+    .ARM.__at_0x1FFFE000                     0x1fffe000   Section      256  start.o(.ARM.__at_0x1FFFE000)
+    MyData                                   0x1fffe100   Section      420  exercise08.o(MyData)
+    Number1                                  0x1fffe100   Data         128  exercise08.o(MyData)
+    Number2                                  0x1fffe180   Data         128  exercise08.o(MyData)
+    Addition                                 0x1fffe200   Data         128  exercise08.o(MyData)
+    Stringbuffer                             0x1fffe280   Data          17  exercise08.o(MyData)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$STANDARDLIB$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors                                0x00000000   Data           0  exercise08.o(RESET)
+    __Vectors_End                            0x000000c0   Data           0  exercise08.o(RESET)
+    __Vectors_Size                           0x000000c0   Number         0  exercise08.o ABSOLUTE
+    HardFault_Handler                        0x00000101   Thumb Code    16  hardfault_lcd.o(HardFaultLCD)
+    InitLCD                                  0x00000111   Thumb Code   124  hardfault_lcd.o(HardFaultLCD)
+    LCD_PutHex                               0x000001cd   Thumb Code    44  hardfault_lcd.o(HardFaultLCD)
+    Startup                                  0x00000299   Thumb Code    14  start.o(Start)
+    Dummy_Handler                            0x00000369   Thumb Code     2  start.o(Start)
+    Reset_Handler                            0x00000411   Thumb Code   122  exercise08.o(MyCode)
+    __initial_sp                             0x1fffe100   Data           0  start.o(.ARM.__at_0x1FFFE000)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000411
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00000a80, Max: 0x00040000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x000007dc, Max: 0x00040000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x000000c0   Data   RO            2    RESET               exercise08.o
+    0x000000c0   0x000000c0   0x00000040   Data   RO           15    .ARM.__at_0xC0      start.o
+    0x00000100   0x00000100   0x00000198   Code   RO           10    HardFaultLCD        hardfault_lcd.o
+    0x00000298   0x00000298   0x000000fc   Code   RO           14    Start               start.o
+    0x00000394   0x00000394   0x0000006c   PAD
+    0x00000400   0x00000400   0x00000010   Code   RO           16    .ARM.__at_0x400     start.o
+    0x00000410   0x00000410   0x0000032c   Code   RO            1  * MyCode              exercise08.o
+    0x0000073c   0x0000073c   0x000000a0   Data   RO            3    MyConst             exercise08.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x1fffe000, Load base: 0x000007dc, Size: 0x000002a4, Max: 0x00008000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x1fffe000   0x000007dc   0x00000100   Data   RW           17    .ARM.__at_0x1FFFE000  start.o
+    0x1fffe100   0x000008dc   0x000001a4   Data   RW            4    MyData              exercise08.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       812        108        352        420          0       1220   exercise08.o
+       408        224          0          0          0        544   hardfault_lcd.o
+       268         58         64        256          0        760   start.o
+
+    ----------------------------------------------------------------------
+      1596        498        416        676          0       2524   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+       108        108          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+         0          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      1596        498        416        676          0       2316   Grand Totals
+      1596        498        416        676          0       2316   ELF Image Totals
+      1596        498        416        676          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 2012 (   1.96kB)
+    Total RW  Size (RW Data + ZI Data)               676 (   0.66kB)
+    Total ROM Size (Code + RO Data + RW Data)       2688 (   2.63kB)
+
+==============================================================================
+

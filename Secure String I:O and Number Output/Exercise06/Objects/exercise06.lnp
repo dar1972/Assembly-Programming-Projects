@@ -1,0 +1,9 @@
+--cpu Cortex-M0+
+".\objects\exercise06.o"
+".\Exercise06_Lib.lib"
+".\objects\hardfault_lcd.o"
+".\objects\start.o"
+--strict --scatter ".\Objects\exercise06.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\exercise06.map" -o .\Objects\exercise06.axf

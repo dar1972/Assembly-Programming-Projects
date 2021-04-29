@@ -1,0 +1,8 @@
+Dependencies for Project 'exercise09', Target 'Target 1': (DO NOT MODIFY !)
+F (.\exercise09.s)(0x5E8F5D7D)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.14.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "MKL46Z256xxx4 SETA 1"--list .\listings\exercise09.lst --xref -o .\objects\exercise09.o --depend .\objects\exercise09.d)
+I (MKL46Z4.s)(0x5E8F4BAC)
+F (.\HardFault_LCD.s)(0x5E8F4BAC)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.14.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "MKL46Z256xxx4 SETA 1"--list .\listings\hardfault_lcd.lst --xref -o .\objects\hardfault_lcd.o --depend .\objects\hardfault_lcd.d)
+I (MKL46Z4.s)(0x5E8F4BAC)
+F (.\MKL46Z4.s)(0x5E8F4BAC)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.14.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "MKL46Z256xxx4 SETA 1"--list .\listings\mkl46z4.lst --xref -o .\objects\mkl46z4.o --depend .\objects\mkl46z4.d)
+F (.\start.s)(0x5E8F4BAC)(--cpu Cortex-M0+ --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.14.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "MKL46Z256xxx4 SETA 1"--list .\listings\start.lst --xref -o .\objects\start.o --depend .\objects\start.d)
+I (MKL46Z4.s)(0x5E8F4BAC)

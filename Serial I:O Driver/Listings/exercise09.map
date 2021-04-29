@@ -1,0 +1,162 @@
+Component: ARM Compiler 5.06 update 5 (build 528) Tool: armlink [4d35e2]
+
+==============================================================================
+
+Section Cross References
+
+    exercise09.o(MyCode) refers to start.o(Start) for Startup
+    exercise09.o(MyCode) refers to exercise09.o(MyData) for QBuffer
+    exercise09.o(MyCode) refers to exercise09.o(MyConst) for String1
+    exercise09.o(RESET) refers to start.o(.ARM.__at_0x1FFFE000) for __initial_sp
+    exercise09.o(RESET) refers to exercise09.o(MyCode) for Reset_Handler
+    exercise09.o(RESET) refers to start.o(Start) for Dummy_Handler
+    exercise09.o(RESET) refers to hardfault_lcd.o(HardFaultLCD) for HardFault_Handler
+
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      192  exercise09.o(RESET)
+    HardFault_LCD.s                          0x00000000   Number         0  hardfault_lcd.o ABSOLUTE
+    MKL46Z4.s                                0x00000000   Number         0  mkl46z4.o ABSOLUTE
+    exercise09.s                             0x00000000   Number         0  exercise09.o ABSOLUTE
+    start.s                                  0x00000000   Number         0  start.o ABSOLUTE
+    .ARM.__at_0xC0                           0x000000c0   Section       64  start.o(.ARM.__at_0xC0)
+    HardFaultLCD                             0x00000100   Section      408  hardfault_lcd.o(HardFaultLCD)
+    LCD_WF_Config                            0x0000018c   Data           0  hardfault_lcd.o(HardFaultLCD)
+    LCD_WF_FRONTPLANE_PINS                   0x00000208   Data           0  hardfault_lcd.o(HardFaultLCD)
+    LCD_DIGITS                               0x00000228   Data           0  hardfault_lcd.o(HardFaultLCD)
+    Start                                    0x00000298   Section      252  start.o(Start)
+    SystemInit                               0x000002a7   Thumb Code    54  start.o(Start)
+    SetClock48MHz                            0x000002dd   Thumb Code   140  start.o(Start)
+    .ARM.__at_0x400                          0x00000400   Section       16  start.o(.ARM.__at_0x400)
+    MyCode                                   0x00000410   Section     1252  exercise09.o(MyCode)
+    InitQueue                                0x0000056d   Thumb Code    22  exercise09.o(MyCode)
+    EnQueue                                  0x00000583   Thumb Code    68  exercise09.o(MyCode)
+    DeQueue                                  0x000005c7   Thumb Code    72  exercise09.o(MyCode)
+    PutStringSB                              0x00000655   Thumb Code    34  exercise09.o(MyCode)
+    PutNumU                                  0x00000677   Thumb Code    44  exercise09.o(MyCode)
+    DIVU                                     0x000006a3   Thumb Code    74  exercise09.o(MyCode)
+    NewLine                                  0x000006ed   Thumb Code    18  exercise09.o(MyCode)
+    PutNumHex                                0x000006ff   Thumb Code    58  exercise09.o(MyCode)
+    PutNumUB                                 0x00000739   Thumb Code    18  exercise09.o(MyCode)
+    Init_UART0_IRQ                           0x0000074b   Thumb Code   154  exercise09.o(MyCode)
+    UART0_ISR                                0x0000087d   Thumb Code    62  exercise09.o(MyCode)
+    GetChar                                  0x000008bb   Thumb Code    16  exercise09.o(MyCode)
+    PutChar                                  0x000008cb   Thumb Code    22  exercise09.o(MyCode)
+    MyConst                                  0x000008f4   Section      160  exercise09.o(MyConst)
+    String1                                  0x000008f4   Data          34  exercise09.o(MyConst)
+    String2                                  0x00000916   Data           9  exercise09.o(MyConst)
+    String3                                  0x0000091f   Data          22  exercise09.o(MyConst)
+    String4                                  0x00000935   Data           9  exercise09.o(MyConst)
+    String5                                  0x0000093e   Data          58  exercise09.o(MyConst)
+    String6                                  0x00000978   Data           8  exercise09.o(MyConst)
+    String7                                  0x00000980   Data           6  exercise09.o(MyConst)
+    String8                                  0x00000986   Data           7  exercise09.o(MyConst)
+    String9                                  0x0000098d   Data           5  exercise09.o(MyConst)
+    .ARM.__at_0x1FFFE000                     0x1fffe000   Section      256  start.o(.ARM.__at_0x1FFFE000)
+    MyData                                   0x1fffe100   Section      224  exercise09.o(MyData)
+    RxQBuffer                                0x1fffe100   Data          80  exercise09.o(MyData)
+    RxRecord                                 0x1fffe150   Data          18  exercise09.o(MyData)
+    TxQBuffer                                0x1fffe162   Data          80  exercise09.o(MyData)
+    TxRecord                                 0x1fffe1b4   Data          18  exercise09.o(MyData)
+    QBuffer                                  0x1fffe1c6   Data           4  exercise09.o(MyData)
+    QRecord                                  0x1fffe1cc   Data          18  exercise09.o(MyData)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$STANDARDLIB$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors                                0x00000000   Data           0  exercise09.o(RESET)
+    __Vectors_End                            0x000000c0   Data           0  exercise09.o(RESET)
+    __Vectors_Size                           0x000000c0   Number         0  exercise09.o ABSOLUTE
+    HardFault_Handler                        0x00000101   Thumb Code    16  hardfault_lcd.o(HardFaultLCD)
+    InitLCD                                  0x00000111   Thumb Code   124  hardfault_lcd.o(HardFaultLCD)
+    LCD_PutHex                               0x000001cd   Thumb Code    44  hardfault_lcd.o(HardFaultLCD)
+    Startup                                  0x00000299   Thumb Code    14  start.o(Start)
+    Dummy_Handler                            0x00000369   Thumb Code     2  start.o(Start)
+    Reset_Handler                            0x00000411   Thumb Code   348  exercise09.o(MyCode)
+    __initial_sp                             0x1fffe100   Data           0  start.o(.ARM.__at_0x1FFFE000)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000411
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00000b74, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000994, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x000000c0   Data   RO            2    RESET               exercise09.o
+    0x000000c0   0x000000c0   0x00000040   Data   RO           15    .ARM.__at_0xC0      start.o
+    0x00000100   0x00000100   0x00000198   Code   RO           10    HardFaultLCD        hardfault_lcd.o
+    0x00000298   0x00000298   0x000000fc   Code   RO           14    Start               start.o
+    0x00000394   0x00000394   0x0000006c   PAD
+    0x00000400   0x00000400   0x00000010   Code   RO           16    .ARM.__at_0x400     start.o
+    0x00000410   0x00000410   0x000004e4   Code   RO            1  * MyCode              exercise09.o
+    0x000008f4   0x000008f4   0x000000a0   Data   RO            3    MyConst             exercise09.o
+
+
+    Execution Region ER_RW (Exec base: 0x1fffe000, Load base: 0x00000994, Size: 0x000001e0, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x1fffe000   0x00000994   0x00000100   Data   RW           17    .ARM.__at_0x1FFFE000  start.o
+    0x1fffe100   0x00000a94   0x000000e0   Data   RW            4    MyData              exercise09.o
+
+
+    Execution Region ER_ZI (Exec base: 0x1fffe1e0, Load base: 0x00000b74, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      1252        172        352        224          0       1576   exercise09.o
+       408        224          0          0          0        544   hardfault_lcd.o
+       268         58         64        256          0        760   start.o
+
+    ----------------------------------------------------------------------
+      2036        562        416        480          0       2880   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+       108        108          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+         0          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      2036        562        416        480          0       2672   Grand Totals
+      2036        562        416        480          0       2672   ELF Image Totals
+      2036        562        416        480          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 2452 (   2.39kB)
+    Total RW  Size (RW Data + ZI Data)               480 (   0.47kB)
+    Total ROM Size (Code + RO Data + RW Data)       2932 (   2.86kB)
+
+==============================================================================
+

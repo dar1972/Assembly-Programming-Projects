@@ -1,0 +1,8 @@
+Dependencies for Project 'exercise06', Target 'Target 1': (DO NOT MODIFY !)
+F (.\exercise06.s)(0x5E4EE0ED)(--cpu Cortex-M0+ -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.14.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "MKL46Z256xxx4 SETA 1"--list .\listings\exercise06.lst -o .\objects\exercise06.o --depend .\objects\exercise06.d)
+I (MKL46Z4.s)(0x5E4EDAF2)
+F (.\Exercise06_Lib.lib)(0x5E4EDA00)()
+F (.\HardFault_LCD.s)(0x5E4EDAF2)(--cpu Cortex-M0+ -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.14.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "MKL46Z256xxx4 SETA 1"--list .\listings\hardfault_lcd.lst -o .\objects\hardfault_lcd.o --depend .\objects\hardfault_lcd.d)
+I (MKL46Z4.s)(0x5E4EDAF2)
+F (.\Start.s)(0x5E4EDAF2)(--cpu Cortex-M0+ -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.14.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "MKL46Z256xxx4 SETA 1"--list .\listings\start.lst -o .\objects\start.o --depend .\objects\start.d)
+I (MKL46Z4.s)(0x5E4EDAF2)
